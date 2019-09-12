@@ -20,7 +20,7 @@
 > - Other users: all the permissions
 > The file hello will be in the working directory
 * 9-John_Doe
-> This script sets the mode of the file hello to this: -*-rwxr-x-wx*-
+> This script sets the mode of the file hello to this: _**-rwxr-x-wx**_
 * 10-mirror_permissions
 > This script sets the mode of the file hello the same as olleh's mode.
 > - The file hello will be in the working directory
