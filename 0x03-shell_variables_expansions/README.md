@@ -48,4 +48,4 @@
 * What happens when you type ls *.c
 > Blog post describing step by step what happens when you type ls *.c and hit Enter in your shell.
 * What is the difference between a hard link and a symbolic link?
-> Blog post explaining what are hard and symbolic links on Linux, how to create them, and what is the difference between the two.
+> Blog post that explain what are hard and symbolic links on Linux, how to create them, and what is the difference between the two.
