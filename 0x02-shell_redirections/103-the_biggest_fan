@@ -1,2 +1,2 @@
 #!/bin/bash
-cat <&0 | cut -f1 | sort | uniq -c | sort -hr | head -11 | sed "s/^[ ]*//" | cut -d ' ' -f 2
+cat <&0 | cut -f1 | sort | uniq -c | sort -hr | head -11 | tr -s [:blank:] | cut -d ' ' -f 3
