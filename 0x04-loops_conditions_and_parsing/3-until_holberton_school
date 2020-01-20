@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Script that displays Holberton School 10 times.
+export i=1
+until [[ "$i" -gt "10" ]]
+do
+  echo "Holberton School"
+  let i=i+1
+done

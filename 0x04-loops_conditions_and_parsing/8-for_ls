@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Displays like ls command but only the part of the name after the first dash.
+export i="a"
+for i in *
+do
+  echo "$i" | cut -d- -f2
+done

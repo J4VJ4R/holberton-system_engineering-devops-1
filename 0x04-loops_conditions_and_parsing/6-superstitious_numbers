@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# Script that displays 20 firs numbers except the superstitious nunbers 4, 9 and 17.
+export i=1
+while [[ "$i" -le "20" ]]
+do
+  echo $i
+  case $i in
+    4 )
+      echo "bad luck from China"
+      ;;
+    9 )
+      echo "bad luck from Japan"
+      ;;
+    17 )
+      echo "bad luck from Italy"
+      ;;
+  esac
+  let i=i+1
+done
