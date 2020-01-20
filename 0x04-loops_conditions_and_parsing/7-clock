@@ -2,7 +2,7 @@
 # Script that displays the time for 12 hours and 59 minutes.
 export i=0
 export j=1
-while [[ "$i" -le "23" ]]
+while [[ "$i" -le "12" ]]
 do
   echo "Hour: $i"
   let j=1
