@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+# Script that displays the username, userid and home dir from the file /etc/passwd.
+export i="i"
+while read -r i
+do
+  st="$(echo "$i" | cut -d : -f1)"
+  stt="The user ${st}"
+  st="$(echo "$i" | cut -d : -f4)"
+  stt="${stt} is part of the ${st} gang"
+  st="$(echo "$i" | cut -d : -f6)"
+  stt="${stt}, lives in ${st}"
+  st="$(echo "$i" | cut -d : -f7)"
+  stt="${stt} and rides ${st}."
+
+  st1="$(echo "$i" | cut -d : -f3)"
+  st2="$(echo "$i" | cut -d : -f2)"
+  stt="${stt} ${st1}'s place is protected by the passcode ${st2}"
+  st="$(echo "$i" | cut -d : -f5)"
+  stt="${stt}, more info about the user here: ${st}"
+  echo "$stt"
+done < /etc/passwd
