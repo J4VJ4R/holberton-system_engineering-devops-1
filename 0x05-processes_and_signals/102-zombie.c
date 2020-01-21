@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <unistd.h>
 
 /**
  * infinite_while - function that let get bussy the main
@@ -22,7 +23,7 @@ int infinite_while(void)
  */
 int _fork(void)
 {
-int ret;
+pid_t ret;
 
 	ret = fork();
 	if (ret == 0)
