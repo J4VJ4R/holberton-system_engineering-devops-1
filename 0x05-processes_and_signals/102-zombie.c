@@ -29,7 +29,7 @@ pid_t ret;
 	if (ret == 0)
 	{
 		sleep(1);
-		return(0);
+		return (0);
 	}
 	else
 	{
