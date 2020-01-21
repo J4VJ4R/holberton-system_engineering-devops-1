@@ -55,8 +55,6 @@ int main(void)
 		return (0);
 	if (_fork() == 0)
 		return (0);
-	if (_fork() == 0)
-		return (0);
 	infinite_while();
 	return (EXIT_SUCCESS);
 }
