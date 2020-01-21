@@ -1,20 +1,7 @@
 #!/usr/bin/env bash
 # Script that store I am allive! indefinitely in /tmp/my_process.
-export pr="$$"
-sudo bash -c "echo $pr > /var/run/my_process.pid"
-
-trap _sigterm 2 3 15
-
-_sigterm()
-{
-  sudo rm -rf /var/run/my_process.pid
-  > /tmp/my_process
-  exit 0
-}
-
-export i=1
-while [ $i ]
+while true
 do
-  echo "I am alive!" >> /tmp/my_process
+  sudo bash -c 'echo "I am alive!" >> /tmp/my_process'
   sleep 2
 done
