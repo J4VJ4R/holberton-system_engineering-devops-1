@@ -18,9 +18,9 @@ int infinite_while(void)
 /**
  * _fork - function that create a child process
  *
- * Return: Nothing
+ * Return: 0 in child, other for father
  */
-void _fork(void)
+int _fork(void)
 {
 int ret;
 
@@ -28,10 +28,13 @@ int ret;
 	if (ret == 0)
 	{
 		sleep(1);
-		exit(0);
+		return(0);
 	}
 	else
+	{
 		printf("Zombie process created, PID: %d\n", ret);
+		return (ret);
+	}
 }
 
 /**
@@ -41,11 +44,18 @@ int ret;
  */
 int main(void)
 {
-	_fork();
-	_fork();
-	_fork();
-	_fork();
-	_fork();
+	if (_fork() == 0)
+		return (0);
+	if (_fork() == 0)
+		return (0);
+	if (_fork() == 0)
+		return (0);
+	if (_fork() == 0)
+		return (0);
+	if (_fork() == 0)
+		return (0);
+	if (_fork() == 0)
+		return (0);
 	infinite_while();
 	return (EXIT_SUCCESS);
 }
