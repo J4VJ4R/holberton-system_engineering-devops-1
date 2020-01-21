@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Script that displays To infinity and beyond indefinitely.
+export i=1
+while [ $i ]
+do
+  echo "To infinity and beyond"
+done

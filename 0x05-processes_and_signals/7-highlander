@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# Script that displays To infinity and beyond indefinitely.
+trap 'echo "I am invincible!!!"' 15
+
+export i=1
+while [ $i ]
+do
+  echo "To infinity and beyond"
+  sleep 2
+done

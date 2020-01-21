@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Script that displays lines containing the bash word.
+for i in $(pgrep bash)
+do
+  echo "$i bash"
+done
