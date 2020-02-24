@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Displays active IPs
+sudo nc -l localhost 98
