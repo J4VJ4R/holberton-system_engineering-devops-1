@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Creates an RSA key pair in holberton protected by betty.
+ssh-keygen -t rsa -b 4096 -C "1249@holbertonschool.com" -f holberton -N betty
