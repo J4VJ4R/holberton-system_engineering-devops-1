@@ -14,9 +14,9 @@ export SSH_KEY="$4"
 
 if [ -f "$SSH_KEY" ]
 then
-    scp -i ${SSH_KEY} ${FILE} ${USERNAME}@${IP}:${FILE}
+    scp -o StrictHostKeyChecking=no -i "${SSH_KEY}" "${FILE}" "${USERNAME}@${IP}":~/
 else
-    scp -i ~/.ssh/holberton ${FILE} ${USERNAME}@${IP}:${FILE}
+    scp -o StrictHostKeyChecking=no -i ~/.ssh/holberton ${FILE} ${USERNAME}@${IP}:${FILE}
 fi
 
 exit 0
