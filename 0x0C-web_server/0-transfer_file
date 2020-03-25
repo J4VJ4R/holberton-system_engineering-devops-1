@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+# transfers a file from our client to a server
+
+if [ $# -lt 3 ]
+then
+    echo "Usage: 0-transfer_file PATH_TO_FILE IP USERNAME PATH_TO_SSH_KEY"
+    exit 1
+fi
+
+export FILE="$1"
+export IP="$2"
+export USERNAME="$3"
+export SSH_KEY="$4"
+
+if [ -f "$SSH_KEY" ]
+then
+    scp -i ${SSH_KEY} ${FILE} ${USERNAME}@${IP}:${FILE}
+else
+    scp -i ~/.ssh/holberton ${FILE} ${USERNAME}@${IP}:${FILE}
+fi
+
+exit 0
