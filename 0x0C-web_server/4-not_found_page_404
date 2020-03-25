@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+# Install Nginx server if neccesary
+# Nginx index by default turns to Holberton School
+# Nginx server so that /redirect_me is redirecting to another page.
+# Nginx server to have a custom 404 page that contains the string Ceci n'est pas une page.
+sudo apt-get update
+sudo apt-get -y install nginx
+sudo service nginx start
+
+sudo rm /var/www/html/index.html
+sudo bash -c "echo 'Holberton School' > /var/www/html/index.html"
+
+export LINE="rewrite ^\/redirect_me https:\/\/www.youtube.com\/watch?v=QH2-TGUlwu4 permanent;"
+sudo sed -i "26i ${LINE}" /etc/nginx/sites-available/default
+
+sudo bash -c "printf 'Ceci n\x27est pas une page\n' > /var/www/html/404.html"
+export LINE="\\\terror_page 404 /404.html;\n\tlocation = /404.html {\n\t\troot /var/www/html;\n\t\tinternal;\n\t}"
+sudo sed -i "27i ${LINE}" /etc/nginx/sites-available/default
+
+sudo service nginx restart && sudo service nginx reload
