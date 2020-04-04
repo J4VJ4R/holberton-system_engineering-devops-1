@@ -16,6 +16,6 @@ sudo sed -i "26i ${LINE}" /etc/nginx/sites-available/default
 sudo bash -c "printf 'Ceci n\x27est pas une page\n' > /var/www/html/404.html"
 export LINE="\\\terror_page 404 /404.html;\n\tlocation = /404.html {\n\t\troot /var/www/html;\n\t\tinternal;\n\t}"
 sudo sed -i "27i ${LINE}" /etc/nginx/sites-available/default
-sudo sed -i "28i \\\tadd_header X-Served-By $HOSTNAME;\n" /etc/nginx/sites-enabled/default
+sudo sed -i "28i \\\tadd_header X-Served-By $HOSTNAME;" /etc/nginx/sites-enabled/default
 
 sudo service nginx restart && sudo service nginx reload
