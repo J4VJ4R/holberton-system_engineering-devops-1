@@ -1,0 +1,11 @@
+#!/bin/bash
+# Configures the firewall by ufw to allow only incoming TCP 22, 80, 443 ports and redirects 8080 to 80
+sudo apt-get update -y
+sudo apt-get install ufw -y
+sudo ufw default deny incoming
+sudo ufw default allow outgoing
+sudo ufw allow ssh/tcp
+sudo ufw allow http/tcp
+sudo ufw allow https/tcp
+sudo ufw allow http-alt/tcp
+sudo sed -i "/^\*filter/i \*nat\n:PREROUTING ACCEPT [0:0]\n-A PREROUTING -p tcp --dport 80 -j REDIRECT --to-port 8080\nCOMMIT\n" /etc/ufw/before.rule/etc/ufw/before.rules
