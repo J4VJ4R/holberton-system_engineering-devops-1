@@ -8,4 +8,4 @@ sudo ufw allow ssh/tcp
 sudo ufw allow http/tcp
 sudo ufw allow https/tcp
 sudo ufw allow http-alt/tcp
-sudo sed -i "/^\*filter/i \*nat\n:PREROUTING ACCEPT [0:0]\n-A PREROUTING -p tcp --dport 80 -j REDIRECT --to-port 8080\nCOMMIT\n" /etc/ufw/before.rule/etc/ufw/before.rules
+sudo sed -i "/^\*filter/i \*nat\n:PREROUTING ACCEPT [0:0]\n-A PREROUTING -p tcp --dport 8080 -j REDIRECT --to-port 80\nCOMMIT\n" /etc/ufw/before.rule/etc/ufw/before.rules
