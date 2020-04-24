@@ -4,6 +4,11 @@ This repository contains information about firewall and web stack debugging:
 ## Topics
 - What is a firewall
 - Tools for server and web debugging
+- telnet
+- ufw
+
+## Context
+![]()
 
 ## Challenges
 
