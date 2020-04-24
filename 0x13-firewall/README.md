@@ -42,7 +42,7 @@ vagrant@gc-server-1585025307:~$
 ###  2. Port forwarding
 Firewalls can not only filter requests, they can also forward them.
 
-**Examplei:** Terminal in - server1
+**Examplei:** Terminal in server1
 ```bash wrap
 root@03-web-01:~# netstat -lpn
 Active Internet connections (only servers)
@@ -71,7 +71,7 @@ root@03-web-01:~# grep listen /etc/nginx/sites-enabled/default
 root@03-web-01:~#
 ```
 
-**Examplei:** Terminal in - server1
+**Examplei:** Terminal in server2
 ```bash wrap
 ubuntu@03-web-02:~$ curl -sI web-01.holberton.online:80
 HTTP/1.1 200 OK
@@ -99,4 +99,4 @@ ubuntu@03-web-02:~$
 ```
 
 ## Author
-Gonzalo Gomez Millan | :octocat: ![]()
+Gonzalo Gomez Millan | :octocat: ![GutHub](https://github.com/gogomillan)
