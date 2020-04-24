@@ -178,6 +178,7 @@ mysql>
 ```
 
 ###  5. MySQL backup
+[![Flooded datacenter](https://github.com/gogomillan/holberton-system_engineering-devops/blob/master/0x14-mysql/assets/flooded_datacenter.jpg)](https://www.youtube.com/watch?v=ANU-oSE5_hU)
 What if the data center where both your primary and replica database servers
 are hosted are down because of a power outage or even worse: flooding, fire?
 Then all your data would inaccessible or lost. Thats why you want to backup and
