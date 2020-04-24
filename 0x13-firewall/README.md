@@ -9,7 +9,9 @@ This repository contains information about firewall and web stack debugging:
 
 ## Context
 ![firewall diagram](https://github.com/gogomillan/holberton-system_engineering-devops/blob/master/0x13-firewall/assets/firewall.png)
-Your servers without a firewall...  
+  
+**BTW:** Your servers **_without_** a firewall...  
+  
 ![firewall gif](https://github.com/gogomillan/holberton-system_engineering-devops/blob/master/0x13-firewall/assets/without-firewall.gif)
 
 ## Challenges
