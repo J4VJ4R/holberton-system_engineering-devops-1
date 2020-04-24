@@ -1,4 +1,4 @@
--- Script that prepares a MySQL server for the project:
+-- Script that prepares a MySQL server for the project: Only for the primary. Run as root
 -- Creates the db tyrell_corp.
 CREATE DATABASE IF NOT EXISTS tyrell_corp;
 USE tyrell_corp;

@@ -1,4 +1,4 @@
--- Script that prepares a MySQL server for the project:
+-- Script that prepares a MySQL server for the project: Run in both servers. Rus as root
 -- Creates the user holberton_user.
 DROP USER IF EXISTS holberton_user@localhost;
 FLUSH PRIVILEGES;
