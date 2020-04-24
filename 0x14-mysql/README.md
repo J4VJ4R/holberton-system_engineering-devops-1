@@ -16,4 +16,4 @@ This repository contains information about bellow applied concepts:
 - MySQL distribution must be 5.7.x
 
 ## Context
-[]!(https://github.com/gogomillan/holberton-system_engineering-devops/blob/master/0x14-mysql/assets/db_replication.png)
+![replication](https://github.com/gogomillan/holberton-system_engineering-devops/blob/master/0x14-mysql/assets/db_replication.png)
