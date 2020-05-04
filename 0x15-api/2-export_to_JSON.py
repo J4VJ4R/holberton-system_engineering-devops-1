@@ -31,7 +31,6 @@ if __name__ == "__main__":
             cu = cu + sep + "{" + s + "}"
         cu = '"{}": [{}]'.format(user, cu)
         cu = '{' + cu + '}'
-        print(cu)
 
         with open('{}.json'.format(user), 'w') as the_file:
             the_file.write("{}\n".format(cu))
