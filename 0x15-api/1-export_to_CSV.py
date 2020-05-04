@@ -18,7 +18,8 @@ if __name__ == "__main__":
         url = "https://jsonplaceholder.typicode.com/users/" + user + "/todos"
         repos = requests.get(url)
 
-        for element in repos.json():
-            print('"{}","{}","{}","{}"'.format(user, username,
-                                               element.get("completed"),
-                                               element.get("title")))
+        with open('{}.csv'.format(user), 'w') as the_file:
+            for element in repos.json():
+                the_file.write('"{}","{}","{}","{}"\n'.
+                               format(user, username, element.get("completed"),
+                                      element.get("title")))
