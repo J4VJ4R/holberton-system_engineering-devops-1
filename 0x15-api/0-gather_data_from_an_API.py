@@ -10,6 +10,10 @@ import sys
 if __name__ == "__main__":
     user = sys.argv[1]
 
+    if len(sys.argv) < 2 or type(sys.argv[1]) != int:
+        print('Usage: 0-gather_data_from_an_API.py <int>')
+        return
+
     url = "https://jsonplaceholder.typicode.com/user/" + user + "/todos"
     repos = requests.get(url)
 
