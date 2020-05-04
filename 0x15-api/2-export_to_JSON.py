@@ -34,4 +34,4 @@ if __name__ == "__main__":
         print(cu)
 
         with open('{}.json'.format(user), 'w') as the_file:
-            the_file.write(cu)
+            the_file.write("{}\n".format(cu))
