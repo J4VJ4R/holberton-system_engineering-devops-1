@@ -18,13 +18,20 @@ if __name__ == "__main__":
         url = "https://jsonplaceholder.typicode.com/users/" + user + "/todos"
         repos = requests.get(url)
 
-        cu = list()
+        cu = ""
         for element in repos.json():
-            s = [("task", element.get("title")),
-                 ("completed", element.get("completed")),
-                 ("username", username)]
-            cu.append(dict(s))
-        total = {user: cu}
+            s = '"task": "{}", "completed": "{}", "username": "{}"'.format(
+                element.get("title"),
+                element.get("completed"),
+                username)
+            if cu == "":
+                sep = ""
+            else:
+                sep = ", "
+            cu = cu + sep + "{" + s + "}"
+        cu = '"{}": [{}]'.format(user, cu)
+        cu = '{' + cu + '}'
+        print(cu)
 
         with open('{}.json'.format(user), 'w') as the_file:
-            the_file.write('{}\n'.format(total))
+            the_file.write(cu)
