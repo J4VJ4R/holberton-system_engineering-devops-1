@@ -20,7 +20,7 @@ if __name__ == "__main__":
         for element in repos.json():
             if first:
                 print("Employee Ervin Howell is done with tasks({}/{}):".
-                    format(done, total))
+                      format(done, total))
                 first = False
             if element.get("completed"):
                 print("\t {}".format(element.get("title")))
