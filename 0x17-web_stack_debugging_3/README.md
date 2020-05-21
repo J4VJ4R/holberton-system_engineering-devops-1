@@ -23,7 +23,7 @@ very widely used set of tools.
 - strace
 
 ## Context
-<img src="assets/d42WuBh.png" alt="assets/d42WuBh.png" width="50%" height="50%" />
+<img src="assets/d42WuBh.png" alt="assets/d42WuBh.png" width="65%" height="65%" />
   
 ## Requirementes
 - Linux Ubuntu 14.04 LTS
