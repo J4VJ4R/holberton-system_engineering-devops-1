@@ -23,7 +23,7 @@ very widely used set of tools.
 - strace
 
 ## Context
-![debug diagram](assets/d42WuBh.png)
+![debug diagram](assets/d42WuBh.png){:height="50%" width="50%"}
   
 ## Requirementes
 - Linux Ubuntu 14.04 LTS
