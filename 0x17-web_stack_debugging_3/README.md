@@ -33,9 +33,7 @@ very widely used set of tools.
 ## Challenges
 
 ###  0. Strace is your friend
-[![strace_your_friend](assets/f5af5167e65bd3101f76.png)](https://youtu.be/uHEzt1QuASo)
-
-[<img src="assets/f5af5167e65bd3101f76.png" alt="assets/f5af5167e65bd3101f76.png" width="50%" height="50%" />](https://youtu.be/uHEzt1QuASo)
+[<img src="assets/f5af5167e65bd3101f76.png" alt="assets/f5af5167e65bd3101f76.png" width="75%" height="75%" />](https://youtu.be/uHEzt1QuASo)
 
 Using strace, find out why Apache is returning a 500 error. Once you find the
 issue, fix it and then automate it using Puppet (instead of using Bash as you
