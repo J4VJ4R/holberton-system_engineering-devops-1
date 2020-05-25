@@ -1,5 +1,6 @@
 # Postmortem
 ![postmortem](assets/postmortem.gif)
+
 Any software system will eventually fail, and that failure can come stem from
 a wide range of possible factors: bugs, traffic spikes, security issues,
 hardware failures, natural disasters, human error Failing is normal and failing
